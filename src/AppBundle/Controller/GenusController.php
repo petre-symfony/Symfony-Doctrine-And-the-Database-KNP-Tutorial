@@ -20,6 +20,8 @@ class GenusController extends Controller {
     $em = $this->getDoctrine()->getManager();
     $em->persist($genus);
     $em->flush();
+    
+    return new Response('Genus Created!');
   }
 
   /**
