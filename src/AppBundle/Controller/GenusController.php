@@ -7,13 +7,15 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
+use AppBundle\Entity\Genus;
 
 class GenusController extends Controller {
   /**
    * @Route("/genus/new")
    */
   public function newAction(){
-    
+    $genus = new Genus();
+    $genus->setName('Octopus'.rand(1, 100));
   }
 
   /**
