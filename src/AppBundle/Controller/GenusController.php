@@ -46,6 +46,8 @@ class GenusController extends Controller {
     $em = $this->getDoctrine()->getManager();
     $genus = $em->getRepository('AppBundle:Genus')
       ->findOneBy(['name' => $genusName]);
+    
+    
 
     /*
     $cache = $this->get('doctrine_cache.providers.my_markdown_cache');
