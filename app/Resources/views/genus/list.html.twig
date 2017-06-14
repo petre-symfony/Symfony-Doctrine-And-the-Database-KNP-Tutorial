@@ -10,7 +10,8 @@
     </thead>
     <tbody>
       {% for genus in genuses %}
-        {{ dump(genus) }}
+        <td>{{ genus.name }}</td>
+        <td>{{ genus.speciesCount }}</td>
       {% endfor %}
     </tbody>
   </table>
