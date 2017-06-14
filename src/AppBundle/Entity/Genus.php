@@ -20,6 +20,21 @@ class Genus {
    */
   private $name;
   
+  /**
+   * @ORM\Column(type="string")
+   */
+  private $subFamily;
+  
+  /**
+   * @ORM\Column(type="integer")
+   */
+  private $speciesCount;
+  
+  /**
+   * @ORM\Column(type="string")
+   */
+  private $funFact;
+  
   public function getName(){
     return $this->name;
   }
