@@ -21,7 +21,7 @@ class GenusController extends Controller {
     $em->persist($genus);
     $em->flush();
     
-    return new Response('Genus Created!');
+    return new Response('<html><body>Genus Created!</body></html>');
   }
 
   /**
