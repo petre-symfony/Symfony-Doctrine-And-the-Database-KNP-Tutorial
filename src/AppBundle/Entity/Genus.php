@@ -66,4 +66,8 @@ class Genus {
   public function setFunFact($funFact){
     $this->funFact = $funFact;
   }
+  
+  public function getUpdatedAt(){
+    return new \DateTime('-'.rand(0, 100).' days');
+  }
 }
