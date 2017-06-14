@@ -47,7 +47,9 @@ class GenusController extends Controller {
     $genus = $em->getRepository('AppBundle:Genus')
       ->findOneBy(['name' => $genusName]);
     
-    
+    if(!$genus){
+      throw $this->createNotFoundException('No genus found');
+    }
 
     /*
     $cache = $this->get('doctrine_cache.providers.my_markdown_cache');
