@@ -10,6 +10,13 @@ use Symfony\Component\HttpFoundation\Response;
 
 class GenusController extends Controller {
   /**
+   * @Route("/genus/new")
+   */
+  public function newAction(){
+    
+  }
+
+  /**
    * @Route("/genus/{genusName}")
    */
   public function showAction($genusName) {
